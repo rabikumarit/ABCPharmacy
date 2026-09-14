@@ -1,0 +1,6 @@
+wwwroot\app.js
+wwwroot\index.html
+wwwroot\styles.css
+C:\working\ABCPharmacy\wwwroot\styles.css
+C:\working\ABCPharmacy\wwwroot\index.html
+C:\working\ABCPharmacy\wwwroot\app.js

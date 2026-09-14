@@ -1,0 +1,32 @@
+{
+  "Medicines": [
+    {
+      "Id": "ccb4fc69-15cd-44c5-9fc6-173bce9344f3",
+      "Name": "Paracetamol 500mg",
+      "Notes": "Store in a cool, dry place.",
+      "ExpiryDate": "2026-10-09T00:00:00+05:30",
+      "Quantity": 42,
+      "Price": 3.50,
+      "Brand": "ABC Health"
+    },
+    {
+      "Id": "74374060-2db0-455d-90e7-f058d4442800",
+      "Name": "Cetirizine 10mg",
+      "Notes": "One tablet daily as directed.",
+      "ExpiryDate": "2027-05-14T00:00:00+05:30",
+      "Quantity": 7,
+      "Price": 6.75,
+      "Brand": "Wellness Labs"
+    },
+    {
+      "Id": "a77017de-6784-4686-96f4-a3e91158145f",
+      "Name": "Vitamin C 1000mg",
+      "Notes": "Effervescent tablets.",
+      "ExpiryDate": "2027-09-14T00:00:00+05:30",
+      "Quantity": 65,
+      "Price": 12.00,
+      "Brand": "NutriPlus"
+    }
+  ],
+  "Sales": []
+}

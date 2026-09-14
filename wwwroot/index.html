@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ABC Pharmacy | Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div><p class="eyebrow">ABC PHARMACY</p><h1>Medicine inventory</h1><p class="subtle">Track stock, expiry dates, and sales from one place.</p></div>
+      <button id="show-form" class="primary">+ Add medicine</button>
+    </header>
+    <section id="medicine-form" class="panel hidden">
+      <div class="section-title"><h2>Add medicine</h2><button id="close-form" class="text-button">Close</button></div>
+      <form id="add-form">
+        <label>Full name<input name="name" required maxlength="120"></label>
+        <label>Brand<input name="brand" required maxlength="80"></label>
+        <label>Expiry date<input name="expiryDate" type="date" required></label>
+        <label>Quantity<input name="quantity" type="number" min="0" step="1" required></label>
+        <label>Price<input name="price" type="number" min="0" step="0.01" required></label>
+        <label class="wide">Notes<textarea name="notes" rows="2" maxlength="500"></textarea></label>
+        <div class="wide form-actions"><button class="primary" type="submit">Save medicine</button><span id="form-message" role="status"></span></div>
+      </form>
+    </section>
+    <section class="panel">
+      <div class="toolbar"><div><h2>Available medicines</h2><p id="count" class="subtle"></p></div><input id="search" type="search" placeholder="Search by medicine name…" aria-label="Search by medicine name"></div>
+      <p class="legend"><span class="chip expiry">Red: expires within 30 days</span><span class="chip stock">Yellow: fewer than 10 in stock</span></p>
+      <div class="table-wrap"><table><thead><tr><th>Medicine</th><th>Brand</th><th>Expiry date</th><th>Quantity</th><th>Price</th><th>Action</th></tr></thead><tbody id="medicines"></tbody></table></div>
+    </section>
+    <section class="panel"><div class="section-title"><h2>Recent sales</h2><button id="refresh-sales" class="text-button">Refresh</button></div><div id="sales" class="sales empty">No sales recorded yet.</div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
